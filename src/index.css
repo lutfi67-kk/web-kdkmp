@@ -1,0 +1,72 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Plus Jakarta Sans", ui-sans-serif, system-ui, -apple-system, sans-serif;
+  --font-serif: "Playfair Display", Georgia, Cambria, "Times New Roman", Times, serif;
+  --font-mono: "JetBrains Mono", ui-monospace, SFMono-Regular, monospace;
+
+  /* Premium Coffee Palette */
+  --color-amber-950: #451a03;
+  --color-stone-950: #0c0a09;
+  --color-coffee-earth: #1e1611;
+  --color-coffee-bean: #2d1f18;
+  --color-coffee-roast: #4a3429;
+  --color-coffee-cream: #fbf8f5;
+  --color-coffee-gold: #c5a880;
+  --color-merah-kdkmp: #b91c1c; /* Crimson Red */
+}
+
+/* Custom styles for smoother experience */
+html {
+  scroll-behavior: smooth;
+  font-family: var(--font-sans);
+  background-color: var(--color-coffee-cream);
+  color: #1c1917; /* stone-900 */
+}
+
+/* Scrollbar Styling */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--color-coffee-cream);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--color-coffee-roast);
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--color-coffee-bean);
+}
+
+/* Custom selection */
+::selection {
+  background-color: var(--color-coffee-gold);
+  color: var(--color-stone-950);
+}
+
+/* Custom animation classes */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.animate-fade-in {
+  animation: fadeIn 0.6s ease-out forwards;
+}
+
+/* Premium card shadow */
+.coffee-card-shadow {
+  box-shadow: 0 4px 20px -2px rgba(45, 31, 24, 0.08), 0 2px 8px -1px rgba(45, 31, 24, 0.04);
+}
+
+.coffee-card-shadow-hover:hover {
+  box-shadow: 0 12px 30px -4px rgba(45, 31, 24, 0.12), 0 4px 12px -2px rgba(45, 31, 24, 0.06);
+  transform: translateY(-2px);
+  transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+}

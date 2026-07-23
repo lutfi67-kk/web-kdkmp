@@ -1,0 +1,6 @@
+{
+  "name": "Koperasi Desa Merah Putih",
+  "description": "Company profile, produk premium kopi Arabika Garut, artikel kesuksesan ekspor, dan konsep desain logo interaktif untuk Koperasi Desa Merah Putih (KDKMP).",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
